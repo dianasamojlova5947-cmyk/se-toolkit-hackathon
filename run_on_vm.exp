@@ -1,0 +1,58 @@
+#!/usr/bin/expect -f
+
+set timeout 60
+set password "3000900Irina"
+set server "10.93.25.171"
+set user "root"
+
+spawn ssh -o StrictHostKeyChecking=no $user@$server
+
+expect "password:"
+send "$password\r"
+
+expect "#"
+
+# Install unzip
+send "apt-get update && apt-get install -y unzip\r"
+expect "#"
+
+# Extract files
+send "cd /root && rm -rf matrix_bot && unzip -o matrix_bot_deploy.zip && ls matrix_bot/\r"
+expect "#"
+
+# Create .env file
+send "cd matrix_bot && cp .env.example .env\r"
+expect "#"
+
+# Update .env with actual credentials
+send "sed -i 's/your_telegram_bot_token_here/8733057294:AAGpVM4qb1FX7eddIRHRA1mA3k3zVp_FK38/' .env\r"
+expect "#"
+
+send "sed -i 's/your_telegram_user_id_here/1101431143/' .env\r"
+expect "#"
+
+send "cat .env\r"
+expect "#"
+
+# Install docker-compose (old version)
+send "apt-get install -y docker-compose\r"
+expect "#"
+
+# Build and run (using docker compose plugin syntax)
+send "docker compose build\r"
+expect {
+    "#" { }
+    timeout { }
+}
+
+send "docker compose up -d\r"
+expect "#"
+
+send "docker ps\r"
+expect "#"
+
+send "docker compose logs --tail=10\r"
+expect "#"
+
+send "exit\r"
+expect eof
