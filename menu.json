@@ -1,0 +1,1184 @@
+{
+  "monday": {
+    "salads": [
+      {
+        "name_ru": "Салат Наслаждение",
+        "name_en": "Salad Delight",
+        "price": "100 ₽",
+        "weight": "120 г",
+        "calories": "151/5/12/6",
+        "ingredients_ru": "Крабовое мясо, яйцо, помидоры, специи, майонез, чеснок",
+        "ingredients_en": "Crab meat, egg, tomatoes, spices, mayonnaise, garlic"
+      },
+      {
+        "name_ru": "Салат Сельдь под шубой",
+        "name_en": "Herring and Beet Salad",
+        "price": "70 ₽",
+        "weight": "120 г",
+        "calories": "198/7/15/7",
+        "ingredients_ru": "Картофель, морковь, сельдь, яйцо, майонез, свекла",
+        "ingredients_en": "Potatoes, carrots, herring, egg, mayonnaise, beetroot"
+      },
+      {
+        "name_ru": "Салат из свежих овощей и пастрами из индейки",
+        "name_en": "Fresh Vegetable Salad with Turkey Pastrami",
+        "price": "160 ₽",
+        "weight": "120 г",
+        "calories": "240/14/10/20",
+        "ingredients_ru": "Пастрами из индейки, помидоры черри, огурцы, салат айсберг, кукуруза, болгарский перец, мёд, растительное масло, лимонный сок",
+        "ingredients_en": "Turkey pastrami, cherry tomatoes, cucumbers, iceberg lettuce, corn, bell pepper, honey, vegetable oil, lemon juice"
+      }
+    ],
+    "soups": [
+      {
+        "name_ru": "Суп картофельный с куриными фрикадельками",
+        "name_en": "Potato Soup with Chicken Meatballs",
+        "price": "90 ₽",
+        "weight": "250 г",
+        "calories": "119/2/9/14",
+        "ingredients_ru": "Куриный бульон, курица, лук, морковь, специи, картофель",
+        "ingredients_en": "Chicken broth, chicken, onion, carrot, spices, potatoes"
+      },
+      {
+        "name_ru": "Борщ с курицей",
+        "name_en": "Borscht with Chicken",
+        "price": "105 ₽",
+        "weight": "250 г",
+        "calories": "210/10/12/14",
+        "ingredients_ru": "Куриный бульон, картофель, морковь, лук, свекла, томатная паста, специи",
+        "ingredients_en": "Chicken broth, potatoes, carrots, onion, beetroot, tomato paste, spices"
+      }
+    ],
+    "main_dishes": [
+      {
+        "name_ru": "Тефтели из курицы с рисом и соусом",
+        "name_en": "Chicken Meatballs with Rice and Sauce",
+        "price": "120 ₽",
+        "weight": "100/20 г",
+        "calories": "245/24/17/28",
+        "ingredients_ru": "Куриный фарш, рис, специи, растительное масло",
+        "ingredients_en": "Ground chicken, rice, spices, vegetable oil"
+      },
+      {
+        "name_ru": "Голень куриная гриль",
+        "name_en": "Grilled Chicken Drumstick",
+        "price": "100 ₽",
+        "weight": "100 г",
+        "calories": "245/24/17/28",
+        "ingredients_ru": "Куриные окорочка, специи, растительное масло, майонез, аджика, чеснок, уксус",
+        "ingredients_en": "Chicken legs, spices, vegetable oil, mayonnaise, adjika, garlic, vinegar"
+      },
+      {
+        "name_ru": "Куриная грудка с сыром и помидором",
+        "name_en": "Chicken Fillet with Cheese and Tomato",
+        "price": "140 ₽",
+        "weight": "100 г",
+        "calories": "228/30/8/6",
+        "ingredients_ru": "Куриное филе, сыр, помидор, яйцо, майонез, специи",
+        "ingredients_en": "Chicken fillet, cheese, tomato, egg, mayonnaise, spices"
+      },
+      {
+        "name_ru": "Наггетсы из свинины в имбирной панировке",
+        "name_en": "Pork Nuggets in Ginger Breading",
+        "price": "150 ₽",
+        "weight": "100 г",
+        "calories": "385/35/19/9",
+        "ingredients_ru": "Свинина, специи, панировочные сухари, имбирь, растительное масло",
+        "ingredients_en": "Pork, spices, breadcrumbs, ginger, vegetable oil"
+      }
+    ],
+    "set_lunch": {
+      "price": "330 ₽",
+      "items": [
+        {
+          "name_ru": "Салат Коктейль из овощей",
+          "name_en": "Salad Cocktail of Vegetables",
+          "calories": "95/2/5/9"
+        },
+        {
+          "name_ru": "Салат Сельдь под шубой",
+          "name_en": "Herring and Beet Salad",
+          "calories": "175/6/13/10"
+        },
+        {
+          "name_ru": "Суп картофельный с куриными фрикадельками",
+          "name_en": "Potato Soup with Chicken Meatballs",
+          "calories": "120/7/4/13"
+        },
+        {
+          "name_ru": "Суп-пюре из зелёного горошка",
+          "name_en": "Green Pea Puree Soup",
+          "calories": "110/5/4/14"
+        },
+        {
+          "name_ru": "Голень куриная гриль",
+          "name_en": "Grilled Chicken Drumstick",
+          "calories": "210/20/14/1"
+        },
+        {
+          "name_ru": "Тефтели из курицы с рисом и соусом",
+          "name_en": "Chicken Meatballs with Rice and Sauce",
+          "calories": "260/16/16/14"
+        },
+        {
+          "name_ru": "Булгур отварной",
+          "name_en": "Boiled Bulgur",
+          "calories": "120/3/2/22"
+        },
+        {
+          "name_ru": "Макароны отварные",
+          "name_en": "Pasta",
+          "calories": "150/5/3/28"
+        },
+        {
+          "name_ru": "Напиток на выбор / Хлеб",
+          "name_en": "Drink of Choice / Bread",
+          "calories": "60/2/1/10"
+        }
+      ]
+    }
+  },
+  "tuesday": {
+    "salads": [
+      {
+        "name_ru": "Салат из редиса с огурцом и сметаной",
+        "name_en": "Radish Salad with Cucumber and Sour Cream",
+        "price": "90 ₽",
+        "weight": "120 г",
+        "calories": "143/2/10/11",
+        "ingredients_ru": "Зелёный лук, огурцы, редис, яйцо, сметана",
+        "ingredients_en": "Green onions, cucumbers, radishes, egg, sour cream"
+      },
+      {
+        "name_ru": "Салат Цезарь с курицей",
+        "name_en": "Caesar Salad with Chicken",
+        "price": "165 ₽",
+        "weight": "120 г",
+        "calories": "258/7/23/4",
+        "ingredients_ru": "Курица, айсберг, сыр, соус Цезарь, гренки, помидоры черри",
+        "ingredients_en": "Chicken, iceberg lettuce, cheese, Caesar sauce, croutons, cherry tomatoes"
+      },
+      {
+        "name_ru": "Салат Буковский",
+        "name_en": "Bukovsky Salad",
+        "price": "125 ₽",
+        "weight": "120 г",
+        "calories": "108/9/6/5",
+        "ingredients_ru": "Зелёный горошек, соус, капуста, лук, морковь, помидоры черри, яйцо, майонез",
+        "ingredients_en": "Green peas, sauce, cabbage, onion, carrot, cherry tomatoes, egg, mayonnaise"
+      }
+    ],
+    "soups": [
+      {
+        "name_ru": "Суп лапша с курицей",
+        "name_en": "Soup with Pasta and Chicken",
+        "price": "100 ₽",
+        "weight": "250 г",
+        "calories": "132/13/4/10",
+        "ingredients_ru": "Куриный бульон, курица, лук, морковь, специи, макароны",
+        "ingredients_en": "Chicken broth, chicken, onion, carrot, spices, pasta"
+      },
+      {
+        "name_ru": "Суп Норвежский",
+        "name_en": "Creamy Fish Soup",
+        "price": "135 ₽",
+        "weight": "250 г",
+        "calories": "164/10/6/16",
+        "ingredients_ru": "Рыба, сливки, картофель, лук, морковь, специи",
+        "ingredients_en": "Fish, cream, potatoes, onion, carrot, spices"
+      }
+    ],
+    "main_dishes": [
+      {
+        "name_ru": "Оладьи из печени",
+        "name_en": "Liver Pancakes",
+        "price": "105 ₽",
+        "weight": "100 г",
+        "calories": "260/12/11/14",
+        "ingredients_ru": "Печень, чеснок, мука, яйцо, масло, специи",
+        "ingredients_en": "Liver, garlic, flour, egg, butter, spices"
+      },
+      {
+        "name_ru": "Котлета куриная с ветчиной",
+        "name_en": "Chicken Cutlet with Ham",
+        "price": "100 ₽",
+        "weight": "100 г",
+        "calories": "262/17/19/3",
+        "ingredients_ru": "Курица, ветчина, молоко, хлеб, растительное масло",
+        "ingredients_en": "Chicken, ham, milk, bread, vegetable oil"
+      },
+      {
+        "name_ru": "Бефстроганов из индейки",
+        "name_en": "Turkey Stroganoff",
+        "price": "200 ₽",
+        "weight": "50/50 г",
+        "calories": "228/16/16/4",
+        "ingredients_ru": "Индейка, лук, шампиньоны, сливки, мука, специи, растительное масло",
+        "ingredients_en": "Turkey, onion, champignons, cream, flour, spices, vegetable oil"
+      },
+      {
+        "name_ru": "Рыба запечённая по-олимпийски с брокколи, цветной капустой и томатами",
+        "name_en": "Olympic-Style Baked Fish with Broccoli, Cauliflower and Tomatoes",
+        "price": "275 ₽",
+        "weight": "100 г",
+        "calories": "170/19/7/7",
+        "ingredients_ru": "Рыба, брокколи, цветная капуста, помидоры, сыр, майонез, растительное масло",
+        "ingredients_en": "Fish, broccoli, cauliflower, tomatoes, cheese, mayonnaise, vegetable oil"
+      },
+      {
+        "name_ru": "Жаркое по-домашнему со свининой",
+        "name_en": "Homemade Roast with Pork",
+        "price": "200 ₽",
+        "weight": "250 г",
+        "calories": "327/14/26/9",
+        "ingredients_ru": "Свинина, картофель, лук, морковь, специи, масло",
+        "ingredients_en": "Pork, potatoes, onion, carrot, spices, oil"
+      }
+    ],
+    "set_lunch": {
+      "price": "330 ₽",
+      "items": [
+        {
+          "name_ru": "Салат из моркови с грушей",
+          "name_en": "Carrot and Pear Salad",
+          "calories": "85/1/4/11"
+        },
+        {
+          "name_ru": "Салат из редиса с огурцом и сметаной",
+          "name_en": "Radish Salad with Cucumber and Sour Cream",
+          "calories": "80/2/5/7"
+        },
+        {
+          "name_ru": "Суп лапша с курицей",
+          "name_en": "Soup with Pasta and Chicken",
+          "calories": "125/7/4/15"
+        },
+        {
+          "name_ru": "Крем-суп овощной с гренками",
+          "name_en": "Vegetable Cream Soup with Croutons",
+          "calories": "100/3/4/13"
+        },
+        {
+          "name_ru": "Котлета куриная с ветчиной",
+          "name_en": "Chicken Cutlet with Ham",
+          "calories": "220/18/14/4"
+        },
+        {
+          "name_ru": "Оладьи из печени",
+          "name_en": "Liver Pancakes",
+          "calories": "190/12/11/8"
+        },
+        {
+          "name_ru": "Капуста тушеная",
+          "name_en": "Stewed Cabbage",
+          "calories": "95/2/4/12"
+        },
+        {
+          "name_ru": "Гречка",
+          "name_en": "Buckwheat Porridge",
+          "calories": "130/4/3/24"
+        },
+        {
+          "name_ru": "Напиток на выбор / Хлеб",
+          "name_en": "Drink of Choice / Bread",
+          "calories": "60/2/1/10"
+        }
+      ]
+    }
+  },
+  "wednesday": {
+    "salads": [
+      {
+        "name_ru": "Салат из красной капусты с имбирными яблоками",
+        "name_en": "Red Cabbage Salad with Ginger Apples",
+        "price": "70 ₽",
+        "weight": "120 г",
+        "calories": "71/2/4/8",
+        "ingredients_ru": "Краснокочанная капуста, имбирь, яблоки, уксус, растительное масло, соль, сахар",
+        "ingredients_en": "Red cabbage, ginger, apples, vinegar, vegetable oil, salt, sugar"
+      },
+      {
+        "name_ru": "Салат Фунчоза с овощами",
+        "name_en": "Funchosa with Vegetables",
+        "price": "100 ₽",
+        "weight": "120 г",
+        "calories": "97/1/2/34",
+        "ingredients_ru": "Фунчоза, огурцы, морковь, помидор, масло",
+        "ingredients_en": "Funchosa, cucumbers, carrot, tomato, oil"
+      }
+    ],
+    "soups": [
+      {
+        "name_ru": "Рассольник с куриными фрикадельками",
+        "name_en": "Pickle Soup with Chicken Meatballs",
+        "price": "95 ₽",
+        "weight": "250 г",
+        "calories": "158/7/5/21",
+        "ingredients_ru": "Куриный бульон, солёные огурцы, перловка, морковь, лук, растительное масло, куриное филе, специи",
+        "ingredients_en": "Chicken broth, pickled cucumbers, pearl barley, carrot, onion, vegetable oil, chicken fillet, spices"
+      },
+      {
+        "name_ru": "Щи из свежей капусты с курицей",
+        "name_en": "Cabbage Soup with Chicken",
+        "price": "115 ₽",
+        "weight": "250 г",
+        "calories": "127/3/7/12",
+        "ingredients_ru": "Куриный бульон, капуста, курица, картофель, лук, морковь, растительное масло, специи",
+        "ingredients_en": "Chicken broth, cabbage, chicken, potatoes, onion, carrot, vegetable oil, spices"
+      }
+    ],
+    "main_dishes": [
+      {
+        "name_ru": "Гуляш из сердца",
+        "name_en": "Braised Beef Heart with Vegetables",
+        "price": "140 ₽",
+        "weight": "50/50 г",
+        "calories": "200/15/12/9",
+        "ingredients_ru": "Сердце говяжье, морковь, лук, специи, томатная паста, мука",
+        "ingredients_en": "Beef heart, carrot, onion, spices, tomato paste, flour"
+      },
+      {
+        "name_ru": "Голень куриная запечённая",
+        "name_en": "Baked Chicken Drumstick",
+        "price": "100 ₽",
+        "weight": "100 г",
+        "calories": "245/24/17/28",
+        "ingredients_ru": "Куриная голень, специи, растительное масло, майонез, аджика, чеснок, уксус",
+        "ingredients_en": "Chicken drumstick, spices, vegetable oil, mayonnaise, adjika, garlic, vinegar"
+      }
+    ],
+    "side_dishes": [
+      {
+        "name_ru": "Рис отварной с мексиканскими овощами",
+        "name_en": "Boiled Rice with Mexican Vegetables",
+        "price": "55 ₽",
+        "weight": "150 г",
+        "calories": "229/4/7/27",
+        "ingredients_ru": "Рис, мексиканская смесь, специи, растительное масло",
+        "ingredients_en": "Rice, Mexican mix, spices, vegetable oil"
+      },
+      {
+        "name_ru": "Гречка",
+        "name_en": "Buckwheat Porridge",
+        "price": "30 ₽",
+        "weight": "150 г",
+        "calories": "300/8/6/52",
+        "ingredients_ru": "Крупа гречневая, соль, растительное масло",
+        "ingredients_en": "Buckwheat, salt, vegetable oil"
+      },
+      {
+        "name_ru": "Кускус жемчужный",
+        "name_en": "Pearl Couscous",
+        "price": "75 ₽",
+        "weight": "150 г",
+        "calories": "350/19/15/60",
+        "ingredients_ru": "Кускус, соль, вода, растительное масло",
+        "ingredients_en": "Couscous, salt, water, vegetable oil"
+      },
+      {
+        "name_ru": "Овощи на пару",
+        "name_en": "Steamed Vegetables",
+        "price": "120 ₽",
+        "weight": "150 г",
+        "calories": "152",
+        "ingredients_ru": "Овощи, специи",
+        "ingredients_en": "Vegetables, spices"
+      }
+    ],
+    "beverages": [
+      {
+        "name_ru": "Чай в ассортименте",
+        "name_en": "Tea in Assortment",
+        "price": "30 ₽",
+        "weight": "200 г",
+        "calories": "40"
+      },
+      {
+        "name_ru": "Кофе растворимый",
+        "name_en": "Instant Coffee",
+        "price": "35 ₽",
+        "weight": "200 г",
+        "calories": "16,3"
+      },
+      {
+        "name_ru": "Компот из свежих фруктов",
+        "name_en": "Fresh Fruit Compote",
+        "price": "45 ₽",
+        "weight": "200 г",
+        "calories": "32,3"
+      }
+    ],
+    "bread": [
+      {
+        "name_ru": "Пшеничный",
+        "name_en": "Wheat Bread",
+        "weight": "30 г",
+        "calories": "242"
+      },
+      {
+        "name_ru": "Хлеб Сельский",
+        "name_en": "Rye Bread",
+        "weight": "30 г",
+        "calories": "240"
+      }
+    ],
+    "set_lunch": {
+      "price": "330 ₽",
+      "items": [
+        {
+          "name_ru": "Салат Фунчоза с овощами",
+          "name_en": "Funchosa with Vegetables",
+          "calories": "130/3/4/20"
+        },
+        {
+          "name_ru": "Салат из красной капусты с имбирными яблоками",
+          "name_en": "Red Cabbage Salad with Ginger Apples",
+          "calories": "70/1/3/9"
+        },
+        {
+          "name_ru": "Рассольник с куриными фрикадельками",
+          "name_en": "Pickle Soup with Chicken Meatballs",
+          "calories": "130/7/5/15"
+        },
+        {
+          "name_ru": "Щи из свежей капусты с курицей",
+          "name_en": "Cabbage Soup with Chicken",
+          "calories": "115/8/4/12"
+        },
+        {
+          "name_ru": "Гуляш из сердца",
+          "name_en": "Braised Beef Heart with Vegetables",
+          "calories": "200/19/13/4"
+        },
+        {
+          "name_ru": "Голень куриная запечённая",
+          "name_en": "Baked Chicken Drumstick",
+          "calories": "210/20/14/1"
+        },
+        {
+          "name_ru": "Рис отварной с мексиканскими овощами",
+          "name_en": "Boiled Rice with Mexican Vegetables",
+          "calories": "140/3/4/25"
+        },
+        {
+          "name_ru": "Гречка",
+          "name_en": "Buckwheat Porridge",
+          "calories": "130/4/3/24"
+        },
+        {
+          "name_ru": "Напиток на выбор / Хлеб",
+          "name_en": "Drink of Choice / Bread",
+          "calories": "60/2/1/10"
+        }
+      ]
+    }
+  },
+  "thursday": {
+    "salads": [
+      {
+        "name_ru": "Салат Крабовый",
+        "name_en": "Crab Salad",
+        "price": "90 ₽",
+        "weight": "120 г",
+        "calories": "151/5/12/6",
+        "ingredients_ru": "Крабовое мясо, рис, яйцо, огурец, специи, майонез, кукуруза консервированная",
+        "ingredients_en": "Crab meat, rice, egg, cucumber, spices, mayonnaise, canned corn"
+      },
+      {
+        "name_ru": "Салат Греческий",
+        "name_en": "Greek Salad",
+        "price": "155 ₽",
+        "weight": "120 г",
+        "calories": "173/4/16/5",
+        "ingredients_ru": "Помидоры, огурцы, перец болгарский, сыр фета, лук, растительное масло",
+        "ingredients_en": "Tomatoes, cucumbers, bell pepper, feta cheese, onion, vegetable oil"
+      },
+      {
+        "name_ru": "Салат куриный BBQ",
+        "name_en": "BBQ Chicken Salad",
+        "price": "140 ₽",
+        "weight": "120 г",
+        "calories": "95/8/2/10",
+        "ingredients_ru": "Айсберг, пекинская капуста, мёд, растительное масло, черри, соус барбекю, куриное филе, специи",
+        "ingredients_en": "Iceberg lettuce, Chinese cabbage, honey, vegetable oil, cherry tomatoes, barbecue sauce, chicken fillet, spices"
+      }
+    ],
+    "soups": [
+      {
+        "name_ru": "Суп лапша грибная",
+        "name_en": "Mushroom Noodle Soup",
+        "price": "115 ₽",
+        "weight": "250 г",
+        "calories": "132/13/4/10",
+        "ingredients_ru": "Грибной бульон, грибы, макароны, специи, лук",
+        "ingredients_en": "Mushroom broth, mushrooms, pasta, spices, onions"
+      },
+      {
+        "name_ru": "Свекольник с куриными фрикадельками",
+        "name_en": "Beetroot Soup with Chicken Meatballs",
+        "price": "100 ₽",
+        "weight": "250 г",
+        "calories": "172/10/6/19",
+        "ingredients_ru": "Свекла, картофель, лук, морковь, томатная паста, растительное масло, специи, курица",
+        "ingredients_en": "Beets, potatoes, onions, carrots, tomato paste, vegetable oil, spices, chicken"
+      }
+    ],
+    "main_dishes": [
+      {
+        "name_ru": "Котлета куриная",
+        "name_en": "Chicken Cutlet",
+        "price": "120 ₽",
+        "weight": "100 г",
+        "calories": "185/20/7/11",
+        "ingredients_ru": "Куриное филе, хлеб, специи, лук, сухари панировочные, растительное масло",
+        "ingredients_en": "Chicken fillet, bread, spices, onion, breadcrumbs, vegetable oil"
+      },
+      {
+        "name_ru": "Куриные желудочки и сердечки тушёные в сметанном соусе",
+        "name_en": "Chicken Ventricles and Hearts Stewed in Sour Cream Sauce",
+        "price": "110 ₽",
+        "weight": "50/50 г",
+        "calories": "260/19/16/8",
+        "ingredients_ru": "Куриные сердечки, желудки, сметана, специи, мука, лук",
+        "ingredients_en": "Chicken hearts, ventricles, sour cream, spices, flour, onions"
+      },
+      {
+        "name_ru": "Зразы мясные с грибами",
+        "name_en": "Zrazy Meat with Mushrooms",
+        "price": "210 ₽",
+        "weight": "100 г",
+        "calories": "230",
+        "ingredients_ru": "Говядина, свинина, шампиньоны, лук, сухари панировочные, растительное масло",
+        "ingredients_en": "Beef, pork, champignons, onion, breadcrumbs, vegetable oil"
+      },
+      {
+        "name_ru": "Рулетик куриный с беконом",
+        "name_en": "Chicken Roll with Bacon",
+        "price": "200 ₽",
+        "weight": "100 г",
+        "calories": "240",
+        "ingredients_ru": "Куриное филе, бекон, сыр творожный, зелень, растительное масло",
+        "ingredients_en": "Chicken fillet, bacon, cream cheese, herbs, vegetable oil"
+      },
+      {
+        "name_ru": "Рыба запечённая по-олимпийски",
+        "name_en": "Olympic-Style Baked Fish",
+        "price": "275 ₽",
+        "weight": "100 г",
+        "calories": "300/21/23/2",
+        "ingredients_ru": "Рыба, брокколи, цветная капуста, помидор, сыр, майонез, растительное масло",
+        "ingredients_en": "Fish, broccoli, cauliflower, tomato, cheese, mayonnaise, vegetable oil"
+      }
+    ],
+    "side_dishes": [
+      {
+        "name_ru": "Картофельное пюре",
+        "name_en": "Mashed Potatoes",
+        "price": "60 ₽",
+        "weight": "150 г",
+        "calories": "157/4/6/23",
+        "ingredients_ru": "Картофель, молоко, соль, масло сливочное",
+        "ingredients_en": "Potatoes, milk, salt, butter"
+      },
+      {
+        "name_ru": "Фриттата из овощей",
+        "name_en": "Vegetable Frittata",
+        "price": "140 ₽",
+        "weight": "150 г",
+        "calories": "157/4/6/23",
+        "ingredients_ru": "Брокколи, яйца, молоко, соль, перец",
+        "ingredients_en": "Broccoli, eggs, milk, salt, pepper"
+      }
+    ],
+    "set_lunch": {
+      "price": "330 ₽",
+      "items": [
+        {
+          "name_ru": "Салат Крабовый",
+          "name_en": "Crab Salad",
+          "calories": "160/7/10/11"
+        },
+        {
+          "name_ru": "Салат Раджа",
+          "name_en": "Raja Salad",
+          "calories": "150/6/9/10"
+        },
+        {
+          "name_ru": "Суп лапша грибная",
+          "name_en": "Mushroom Noodle Soup",
+          "calories": "110/4/4/15"
+        },
+        {
+          "name_ru": "Свекольник с куриными фрикадельками",
+          "name_en": "Beetroot Soup with Chicken Meatballs",
+          "calories": "120/7/5/12"
+        },
+        {
+          "name_ru": "Котлета куриная",
+          "name_en": "Chicken Cutlet",
+          "calories": "220/18/14/5"
+        },
+        {
+          "name_ru": "Куриные желудочки и сердечки тушёные в сметанном соусе",
+          "name_en": "Chicken Ventricles and Hearts Stewed in Sour Cream Sauce",
+          "calories": "190/17/12/3"
+        },
+        {
+          "name_ru": "Картофельное пюре",
+          "name_en": "Mashed Potatoes",
+          "calories": "130/3/5/20"
+        },
+        {
+          "name_ru": "Макароны отварные",
+          "name_en": "Pasta",
+          "calories": "150/5/3/28"
+        },
+        {
+          "name_ru": "Напиток на выбор / Хлеб",
+          "name_en": "Drink of Choice / Bread",
+          "calories": "60/2/1/10"
+        }
+      ]
+    }
+  },
+  "friday": {
+    "salads": [
+      {
+        "name_ru": "Салат Столичный",
+        "name_en": "Capital Salad",
+        "price": "95 ₽",
+        "weight": "120 г",
+        "calories": "104/4/9/2",
+        "ingredients_ru": "Картофель, морковь, зелёный горошек, курица, огурец, майонез",
+        "ingredients_en": "Potatoes, carrot, green peas, chicken, cucumber, mayonnaise"
+      },
+      {
+        "name_ru": "Салат Мимоза",
+        "name_en": "Mimosa Salad",
+        "price": "100 ₽",
+        "weight": "120 г",
+        "calories": "228/11/17/6",
+        "ingredients_ru": "Картофель, морковь, яйца, сыр, майонез",
+        "ingredients_en": "Potatoes, carrot, eggs, cheese, mayonnaise"
+      },
+      {
+        "name_ru": "Салат куриный BBQ",
+        "name_en": "BBQ Chicken Salad",
+        "price": "140 ₽",
+        "weight": "120 г",
+        "calories": "158/9/8/12",
+        "ingredients_ru": "Курица, салат, соус BBQ, овощи",
+        "ingredients_en": "Chicken, lettuce, BBQ sauce, vegetables"
+      }
+    ],
+    "soups": [
+      {
+        "name_ru": "Суп чесночный со свининой",
+        "name_en": "Czech Garlic Soup with Pork",
+        "price": "95 ₽",
+        "weight": "250 г",
+        "calories": "117/3/7/12",
+        "ingredients_ru": "Свинина, чеснок, картофель, специи",
+        "ingredients_en": "Pork, garlic, potatoes, spices"
+      },
+      {
+        "name_ru": "Щи из свежей капусты с говядиной",
+        "name_en": "Cabbage Soup with Beef",
+        "price": "140 ₽",
+        "weight": "250 г",
+        "calories": "244/10/17/12",
+        "ingredients_ru": "Капуста, говядина, картофель, морковь, лук",
+        "ingredients_en": "Cabbage, beef, potatoes, carrot, onion"
+      }
+    ],
+    "main_dishes": [
+      {
+        "name_ru": "Голень куриная гриль",
+        "name_en": "Grilled Chicken Drumstick",
+        "price": "100 ₽",
+        "weight": "100 г",
+        "calories": "245/24/17/28",
+        "ingredients_ru": "Курица, специи, масло",
+        "ingredients_en": "Chicken, spices, oil"
+      },
+      {
+        "name_ru": "Котлета куриная с картофелем",
+        "name_en": "Chicken Cutlet with Potatoes",
+        "price": "135 ₽",
+        "weight": "100 г",
+        "calories": "230/14/17/6",
+        "ingredients_ru": "Куриный фарш, картофель, специи",
+        "ingredients_en": "Chicken mince, potatoes, spices"
+      },
+      {
+        "name_ru": "Котлета из горбуши",
+        "name_en": "Pink Salmon Cutlet",
+        "price": "200 ₽",
+        "weight": "100 г",
+        "calories": "285/19/17/14",
+        "ingredients_ru": "Горбуша, хлеб, специи",
+        "ingredients_en": "Pink salmon, bread, spices"
+      },
+      {
+        "name_ru": "Гуляш из говядины",
+        "name_en": "Beef Goulash",
+        "price": "180 ₽",
+        "weight": "100 г",
+        "calories": "196/11/13/8",
+        "ingredients_ru": "Говядина, лук, томат, специи",
+        "ingredients_en": "Beef, onion, tomato, spices"
+      },
+      {
+        "name_ru": "Бефстроганов из индейки",
+        "name_en": "Turkey Stroganoff",
+        "price": "200 ₽",
+        "weight": "50/50 г",
+        "calories": "228/16/16/4",
+        "ingredients_ru": "Индейка, грибы, сливки, лук",
+        "ingredients_en": "Turkey, mushrooms, cream, onion"
+      }
+    ],
+    "set_lunch": {
+      "price": "330 ₽",
+      "items": [
+        {
+          "name_ru": "Салат Светофор",
+          "name_en": "Traffic Light Salad",
+          "calories": "80/1/4/10"
+        },
+        {
+          "name_ru": "Салат Столичный",
+          "name_en": "Capital Salad",
+          "calories": "65/1/3/8"
+        },
+        {
+          "name_ru": "Суп чесночный",
+          "name_en": "Garlic Soup",
+          "calories": "110/4/4/14"
+        },
+        {
+          "name_ru": "Суп Боб чорба",
+          "name_en": "Bean Chorba Soup",
+          "calories": "95/5/3/12"
+        },
+        {
+          "name_ru": "Котлета куриная",
+          "name_en": "Chicken Cutlet",
+          "calories": "220/18/14/5"
+        },
+        {
+          "name_ru": "Голень куриная",
+          "name_en": "Chicken Drumstick",
+          "calories": "210/20/14/1"
+        },
+        {
+          "name_ru": "Картофель по-деревенски",
+          "name_en": "Rustic Potatoes",
+          "calories": "130/3/5/20"
+        },
+        {
+          "name_ru": "Гороховое пюре",
+          "name_en": "Pea Mash",
+          "calories": "90/4/3/12"
+        },
+        {
+          "name_ru": "Хлеб / Напиток",
+          "name_en": "Bread / Drink",
+          "calories": "60/2/1/10"
+        }
+      ]
+    }
+  },
+  "saturday": {
+    "salads": [
+      {
+        "name_ru": "Салат с курицей и ананасом",
+        "name_en": "Salad with Chicken and Pineapple",
+        "price": "150 ₽",
+        "weight": "120 г",
+        "calories": "240/14/10/20",
+        "ingredients_ru": "Куриное филе, салат айсберг, гренки, чесночный соус, ананас, сыр",
+        "ingredients_en": "Chicken fillet, iceberg lettuce, croutons, garlic sauce, pineapple, cheese"
+      },
+      {
+        "name_ru": "Салат Мимоза",
+        "name_en": "Mimosa Salad",
+        "price": "100 ₽",
+        "weight": "120 г",
+        "calories": "228/11/17/6",
+        "ingredients_ru": "Картофель, морковь, сыр, яйца, майонез, крабовое мясо, специи",
+        "ingredients_en": "Potatoes, carrots, cheese, eggs, mayonnaise, crab meat, spices"
+      }
+    ],
+    "soups": [
+      {
+        "name_ru": "Тайский овощной суп с омлетом",
+        "name_en": "Thai Vegetable Soup with Omelet",
+        "price": "80 ₽",
+        "weight": "250 г",
+        "calories": "158/16/28/12",
+        "ingredients_ru": "Пекинская капуста, лук, морковь, омлет, кинза, соевый соус, растительное масло",
+        "ingredients_en": "Chinese cabbage, onion, carrot, omelet, coriander, soy sauce, vegetable oil"
+      },
+      {
+        "name_ru": "Суп фасолевый с курицей",
+        "name_en": "Bean Soup with Chicken",
+        "price": "120 ₽",
+        "weight": "250 г",
+        "calories": "158/7/5/21",
+        "ingredients_ru": "Курица, картофель, морковь, лук, перловка, томатная паста, растительное масло, специи",
+        "ingredients_en": "Chicken, potatoes, carrots, onion, pearl barley, tomato paste, vegetable oil, spices"
+      },
+      {
+        "name_ru": "Суп куриный с чесночными галушками",
+        "name_en": "Chicken Soup with Garlic Dumplings",
+        "price": "110 ₽",
+        "weight": "250 г",
+        "calories": "201/10/7/25",
+        "ingredients_ru": "Куриный бульон, курица, картофель, морковь, лук, мука, яйцо, специи, растительное масло",
+        "ingredients_en": "Chicken broth, chicken, potatoes, carrots, onions, flour, egg, spices, vegetable oil"
+      }
+    ],
+    "main_dishes": [
+      {
+        "name_ru": "Оладьи из говяжьей печени",
+        "name_en": "Beef Liver Fritters",
+        "price": "150 ₽",
+        "weight": "100 г",
+        "calories": "260/12/11/14",
+        "ingredients_ru": "Печень говяжья, чеснок, мука, яйцо, масло, специи",
+        "ingredients_en": "Beef liver, garlic, flour, egg, butter, spices"
+      },
+      {
+        "name_ru": "Стожки с грибами",
+        "name_en": "Mushroom Racks",
+        "price": "120 ₽",
+        "weight": "100 г",
+        "calories": "131/17/2/12",
+        "ingredients_ru": "Куриное филе, грибы, лук, сыр, специи, растительное масло",
+        "ingredients_en": "Chicken fillet, mushrooms, onion, cheese, spices, vegetable oil"
+      },
+      {
+        "name_ru": "Гуляш из говядины",
+        "name_en": "Beef Goulash",
+        "price": "180 ₽",
+        "weight": "50/50 г",
+        "calories": "327/14/26/9",
+        "ingredients_ru": "Говядина, лук, морковь, томатная паста, растительное масло, специи, соль, мука",
+        "ingredients_en": "Beef, onion, carrot, tomato paste, vegetable oil, spices, salt, flour"
+      },
+      {
+        "name_ru": "Зразы куриные со шпинатом и яйцом",
+        "name_en": "Chicken Zrazy with Spinach and Egg",
+        "price": "140 ₽",
+        "weight": "100 г",
+        "calories": "300/16/19/15",
+        "ingredients_ru": "Куриное филе, лук, шпинат, молоко, специи, яйцо, сухари панировочные, масло сливочное",
+        "ingredients_en": "Chicken fillet, onion, spinach, milk, spices, egg, breadcrumbs, butter"
+      },
+      {
+        "name_ru": "Мойва в кляре",
+        "name_en": "Capelin in Batter",
+        "price": "150 ₽",
+        "weight": "150 г",
+        "calories": "292/21/22/3",
+        "ingredients_ru": "Мойва, мука, яйца, соль, растительное масло",
+        "ingredients_en": "Capelin, flour, eggs, salt, vegetable oil"
+      }
+    ],
+    "side_dishes": [
+      {
+        "name_ru": "Капуста тушёная со сметаной и кетчупом",
+        "name_en": "Stewed Cabbage with Sour Cream and Ketchup",
+        "price": "55 ₽",
+        "weight": "150 г",
+        "calories": "148/6/1/30",
+        "ingredients_ru": "Капуста, морковь, лук, масло, кетчуп, сметана, соль, мука, сахар",
+        "ingredients_en": "Cabbage, carrots, onions, oil, ketchup, sour cream, salt, flour, sugar"
+      },
+      {
+        "name_ru": "Фасоль стручковая с яйцом",
+        "name_en": "String Beans with Egg",
+        "price": "110 ₽",
+        "weight": "150 г",
+        "calories": "110",
+        "ingredients_ru": "Фасоль стручковая, соевый соус, яйцо, чеснок, растительное масло",
+        "ingredients_en": "Green beans, soy sauce, egg, garlic, vegetable oil"
+      }
+    ],
+    "set_lunch": {
+      "price": "330 ₽",
+      "items": [
+        {
+          "name_ru": "Салат из свеклы с имбирем",
+          "name_en": "Beetroot and Ginger Salad",
+          "calories": "80/1/4/9"
+        },
+        {
+          "name_ru": "Салат Ачичук",
+          "name_en": "Achichuk Salad",
+          "calories": "105/2/5/12"
+        },
+        {
+          "name_ru": "Суп фасолевый с курицей",
+          "name_en": "Bean Soup with Chicken",
+          "calories": "160/8/6/16"
+        },
+        {
+          "name_ru": "Тайский овощной суп с омлетом",
+          "name_en": "Thai Vegetable Soup with Omelet",
+          "calories": "180/8/10/12"
+        },
+        {
+          "name_ru": "Оладьи из говяжьей печени",
+          "name_en": "Beef Liver Fritters",
+          "calories": "120/10/6/6"
+        },
+        {
+          "name_ru": "Стожки с грибами",
+          "name_en": "Mushroom Racks",
+          "calories": "90/7/4/5"
+        },
+        {
+          "name_ru": "Гречка",
+          "name_en": "Buckwheat Porridge",
+          "calories": "130/4/3/24"
+        },
+        {
+          "name_ru": "Капуста тушёная со сметаной и кетчупом",
+          "name_en": "Stewed Cabbage with Sour Cream and Ketchup",
+          "calories": "130/3/6/14"
+        },
+        {
+          "name_ru": "Напиток на выбор / Хлеб",
+          "name_en": "Drink of Choice / Bread",
+          "calories": "60/2/1/10"
+        }
+      ]
+    }
+  },
+  "sunday": {
+    "salads": [
+      {
+        "name_ru": "Салат Оливье",
+        "name_en": "Salad Olivier",
+        "price": "85 ₽",
+        "weight": "120 г",
+        "calories": "190/11/11/12",
+        "ingredients_ru": "Картофель, морковь, зелёный горошек, ветчина, огурец солёный, майонез",
+        "ingredients_en": "Potatoes, carrots, green peas, ham, pickled cucumber, mayonnaise"
+      },
+      {
+        "name_ru": "Салат Красное море",
+        "name_en": "Red Sea Salad",
+        "price": "105 ₽",
+        "weight": "120 г",
+        "calories": "151/5/12/6",
+        "ingredients_ru": "Помидор, крабовые палочки, болгарский перец, сыр, специи, зелень, майонез",
+        "ingredients_en": "Tomato, crab sticks, bell pepper, cheese, spices, herbs, mayonnaise"
+      },
+      {
+        "name_ru": "Салат Зелёный с ветчиной",
+        "name_en": "Green Salad with Ham",
+        "price": "75 ₽",
+        "weight": "120 г",
+        "calories": "121/3/8/9",
+        "ingredients_ru": "Картофель, ветчина, морковь, пекинская капуста, майонез, специи",
+        "ingredients_en": "Potatoes, ham, carrots, Chinese cabbage, mayonnaise, spices"
+      }
+    ],
+    "soups": [
+      {
+        "name_ru": "Суп картофельный с вермишелью и куриными фрикадельками",
+        "name_en": "Potato Soup with Noodles and Chicken Meatballs",
+        "price": "95 ₽",
+        "weight": "250 г",
+        "calories": "132/13/4/10",
+        "ingredients_ru": "Картофель, вермишель, морковь, лук, растительное масло, специи, курица",
+        "ingredients_en": "Potatoes, noodles, carrots, onions, vegetable oil, spices, chicken"
+      },
+      {
+        "name_ru": "Суп фасолевый с курицей",
+        "name_en": "Bean Soup with Chicken",
+        "price": "120 ₽",
+        "weight": "250 г",
+        "calories": "172/10/6/19",
+        "ingredients_ru": "Курица, картофель, лук, сельдерей, томат, морковь, фасоль, специи, масло",
+        "ingredients_en": "Chicken, potatoes, onion, celery, tomato, carrots, beans, spices, oil"
+      },
+      {
+        "name_ru": "Уха Ростовская",
+        "name_en": "Fish Soup “Rostovsky”",
+        "price": "130 ₽",
+        "weight": "250 г",
+        "calories": "164/10/6/16",
+        "ingredients_ru": "Рыба, картофель, лук, морковь, специи, растительное масло",
+        "ingredients_en": "Fish, potatoes, onion, carrots, spices, vegetable oil"
+      }
+    ],
+    "main_dishes": [
+      {
+        "name_ru": "Котлета куриная с грибами",
+        "name_en": "Chicken Cutlet with Mushrooms",
+        "price": "110 ₽",
+        "weight": "100 г",
+        "calories": "185/20/7/11",
+        "ingredients_ru": "Куриное филе, специи, хлеб, грибы, сушёные томаты, масло",
+        "ingredients_en": "Chicken fillet, spices, bread, mushrooms, sun-dried tomatoes, oil"
+      },
+      {
+        "name_ru": "Гуляш из курицы",
+        "name_en": "Chicken Goulash",
+        "price": "100 ₽",
+        "weight": "50/50 г",
+        "calories": "100/18/2/2",
+        "ingredients_ru": "Курица, лук, морковь, томатная паста, масло растительное, специи, соль, мука",
+        "ingredients_en": "Chicken, onion, carrots, tomato paste, vegetable oil, spices, salt, flour"
+      },
+      {
+        "name_ru": "Свинина по-восточному",
+        "name_en": "Pork in the Oriental Style",
+        "price": "195 ₽",
+        "weight": "50/50 г",
+        "calories": "400/21/31/12",
+        "ingredients_ru": "Свинина, лук, морковь, томатная паста, имбирь, растительное масло, специи",
+        "ingredients_en": "Pork, onion, carrot, tomato paste, ginger, vegetable oil, spices"
+      },
+      {
+        "name_ru": "Бедро куриное в сливочно-горчичном соусе",
+        "name_en": "Chicken Thighs in Creamy Mustard Sauce",
+        "price": "180 ₽",
+        "weight": "100 г",
+        "calories": "245/24/17/28",
+        "ingredients_ru": "Куриные бёдра, специи, горчица, сливки, растительное масло",
+        "ingredients_en": "Chicken thighs, spices, mustard, cream, vegetable oil"
+      }
+    ],
+    "side_dishes": [
+      {
+        "name_ru": "Картофельное пюре",
+        "name_en": "Mashed Potatoes",
+        "price": "60 ₽",
+        "weight": "150 г",
+        "calories": "157/4/6/23",
+        "ingredients_ru": "Картофель, молоко, соль, масло сливочное",
+        "ingredients_en": "Potatoes, milk, salt, butter"
+      }
+    ],
+    "set_lunch": {
+      "price": "330 ₽",
+      "items": [
+        {
+          "name_ru": "Салат Овощное здоровье",
+          "name_en": "Vegetable Salad",
+          "calories": "80/1/4/10"
+        },
+        {
+          "name_ru": "Салат Оливье",
+          "name_en": "Salad Olivier",
+          "calories": "105/2/6/10"
+        },
+        {
+          "name_ru": "Суп фасолевый с курицей",
+          "name_en": "Bean Soup with Chicken",
+          "calories": "160/8/6/16"
+        },
+        {
+          "name_ru": "Суп картофельный с вермишелью и куриными фрикадельками",
+          "name_en": "Potato Soup with Noodles and Chicken Meatballs",
+          "calories": "180/8/7/18"
+        },
+        {
+          "name_ru": "Котлета куриная с грибами",
+          "name_en": "Chicken Cutlet with Mushrooms",
+          "calories": "120/10/6/4"
+        },
+        {
+          "name_ru": "Гуляш из курицы",
+          "name_en": "Chicken Goulash",
+          "calories": "90/7/4/6"
+        },
+        {
+          "name_ru": "Гороховое пюре",
+          "name_en": "Pea Mash",
+          "calories": "90/4/3/12"
+        },
+        {
+          "name_ru": "Гречка",
+          "name_en": "Buckwheat Porridge",
+          "calories": "130/4/3/24"
+        },
+        {
+          "name_ru": "Напиток на выбор / Хлеб",
+          "name_en": "Drink of Choice / Bread",
+          "calories": "60/2/1/10"
+        }
+      ]
+    }
+  },
+  "fasting_menu": [
+    {
+      "name_ru": "Салат Светофор",
+      "name_en": "Traffic Light Salad",
+      "price": "95 ₽",
+      "weight": "120 г",
+      "calories": "135/3/5/12",
+      "ingredients_ru": "Огурец, болгарский перец, морковь, листья салата, растительное масло",
+      "ingredients_en": "Cucumber, bell pepper, carrot, lettuce, vegetable oil"
+    },
+    {
+      "name_ru": "Суп Боб чорба овощной",
+      "name_en": "Bean Chorba Vegetable Soup",
+      "price": "95 ₽",
+      "weight": "250 г",
+      "calories": "194/9/6/26",
+      "ingredients_ru": "Фасоль, сельдерей, морковь, томат, специи",
+      "ingredients_en": "Beans, celery, carrot, tomato, spices"
+    },
+    {
+      "name_ru": "Хайгеты из соевого фарша",
+      "name_en": "Soy Mince Nuggets",
+      "price": "260 ₽",
+      "weight": "100 г",
+      "calories": "339/10/18/32",
+      "ingredients_ru": "Соевый фарш, панировка, специи, растительное масло",
+      "ingredients_en": "Soy mince, breading, spices, vegetable oil"
+    },
+    {
+      "name_ru": "Картофель по-деревенски",
+      "name_en": "Rustic Potatoes",
+      "price": "50 ₽",
+      "weight": "150 г",
+      "calories": "282/5/15/32",
+      "ingredients_ru": "Картофель, растительное масло, специи",
+      "ingredients_en": "Potatoes, vegetable oil, spices"
+    },
+    {
+      "name_ru": "Горошек на пару",
+      "name_en": "Pea Mash",
+      "price": "30 ₽",
+      "weight": "150 г",
+      "calories": "271/15/10/31",
+      "ingredients_ru": "Горох, масло, специи",
+      "ingredients_en": "Peas, oil, spices"
+    },
+    {
+      "name_ru": "Рагу из овощей",
+      "name_en": "Vegetable Ragout",
+      "price": "70 ₽",
+      "weight": "150 г",
+      "calories": "282/5/15/32",
+      "ingredients_ru": "Кабачки, морковь, картофель, лук, масло, специи",
+      "ingredients_en": "Zucchini, carrot, potatoes, onion, oil, spices"
+    },
+    {
+      "name_ru": "Рис с мексиканскими овощами",
+      "name_en": "Rice with Mexican Vegetables",
+      "price": "55 ₽",
+      "weight": "150 г",
+      "calories": "229/4/7/27",
+      "ingredients_ru": "Рис, овощная смесь, масло, специи",
+      "ingredients_en": "Rice, vegetable mix, oil, spices"
+    }
+  ]
+}
