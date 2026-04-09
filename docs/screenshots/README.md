@@ -5,10 +5,10 @@ This folder contains screenshots used in the main project README.
 ## Gallery
 
 ### Start Screen
-![Start screen](./%3Astart.jpeg)
+![Start screen](./Matrix%20Bot.jpeg)
 
 ### Main Menu
-![Main menu](./Matrix%20Bot.jpeg)
+![Main menu](./%3Astart.jpeg)
 
 ### Language Selection
 ![Language selection](./Language.jpeg)
