@@ -7,7 +7,7 @@ Add the following screenshots to this folder:
 1. **main_menu.png** - Main menu of the bot showing:
    - Language selection
    - Main navigation buttons (Today, Week, Fasting, Info)
-
+   
 2. **day_menu.png** - Day menu showing:
    - Categories (Salads, Soups, Main dishes, etc.)
    - Dishes within a category
@@ -23,15 +23,4 @@ Add the following screenshots to this folder:
 5. **admin_panel.png** - Admin panel showing:
    - Add/Edit/Delete dish options
    - View menu option
-
-## How to Take Screenshots
-
-1. Open Telegram Desktop
-2. Start your bot with /start
-3. Take screenshots using:
-   - macOS: Cmd+Shift+4, then Space, then click on Telegram window
-   - Windows: Win+Shift+S, then select the area
-
-## After Taking Screenshots
-
-Rename files to match the names above and update README.md if needed.
+  ![admin panel](docs/screenshots/Admin panel.jpeg)
