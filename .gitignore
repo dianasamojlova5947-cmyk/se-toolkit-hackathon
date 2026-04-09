@@ -67,3 +67,5 @@ admins.json
 
 # Local database
 matrix_bot.db
+deploy_to_vm.exp
+run_on_vm.exp
