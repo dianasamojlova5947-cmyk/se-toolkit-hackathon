@@ -258,9 +258,12 @@ MIT License - see the [LICENSE](LICENSE) file.
 
 ## Author
 
-- **Name:** [Your Name]
-- **Email:** [Your University Email]
-- **Group:** [Your Group]
+- **Name:** Samoylova Diana
+- **Email:** d.samoilova@innopolis.university
+- **Group:** DSAI-05
+- **GitHub:** dianasamojlova5947-cmyk
+
+> Note: Telegram bot token and admin ID should be kept in your local `.env` file and should not be committed to GitHub.
 
 ---
 
