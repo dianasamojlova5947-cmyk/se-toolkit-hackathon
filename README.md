@@ -27,7 +27,7 @@ Matrix Bot is a Telegram assistant for the university cafeteria. It helps users 
 
 | | | |
 |---|---|---|
-| <img src="docs/screenshots/%3Astart.jpeg" alt="Start screen" width="100%"> | <img src="docs/screenshots/Matrix%20Bot.jpeg" alt="Main menu" width="100%"> | <img src="docs/screenshots/Language.jpeg" alt="Language selection" width="100%"> |
+| <img src="docs/screenshots/Matrix%20Bot.jpeg" alt="Start screen" width="100%"> | <img src="docs/screenshots/%3Astart.jpeg" alt="Main menu" width="100%"> | <img src="docs/screenshots/Language.jpeg" alt="Language selection" width="100%"> |
 | <sub>Start screen</sub> | <sub>Main menu</sub> | <sub>Language selection</sub> |
 | <img src="docs/screenshots/Days.jpeg" alt="Days menu" width="100%"> | <img src="docs/screenshots/Category.jpeg" alt="Category view" width="100%"> | <img src="docs/screenshots/Admin%20panel.jpeg" alt="Admin panel" width="100%"> |
 | <sub>Days menu</sub> | <sub>Category view</sub> | <sub>Admin panel</sub> |
