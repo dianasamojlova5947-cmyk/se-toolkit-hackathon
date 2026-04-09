@@ -1,13 +1,6 @@
 # Matrix Bot
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11+">
-  <img src="https://img.shields.io/badge/aiogram-3.x-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="aiogram 3.x">
-  <img src="https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker ready">
-  <img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge" alt="MIT License">
-</p>
-
-<p align="center">
   <b>Telegram bot for the MATRIX cafeteria menu</b><br>
   Browse today's dishes, weekly menus, lenten meals, and favorites in Russian or English.
 </p>
