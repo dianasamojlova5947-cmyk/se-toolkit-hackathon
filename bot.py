@@ -7,6 +7,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import CommandStart
+from aiogram.exceptions import TelegramBadRequest
 from aiogram.types import (
     Message,
     InlineKeyboardMarkup,
@@ -101,13 +102,14 @@ TEXTS = {
             "🌿 Найду постные блюда\n\n"
             "✨ Если нужно что-то найти, я всегда рядом!"
         ),
-        "today_menu": "Сегодняшнее меню",
-        "week_menu": "Меню на неделю",
-        "fasting_menu": "Постное меню",
+        "today_menu": "🍽 Сегодняшнее меню",
+        "week_menu": "📅 Меню на неделю",
+        "fasting_menu": "🌿 Постное меню",
         "contacts": "Информация",
-        "admin_panel": "Админ-панель",
-        "change_language": "Сменить язык",
-        "back": "Назад",
+        "favorites": "⭐ Избранное",
+        "admin_panel": "⚙️ Админ-панель",
+        "change_language": "🌐 Сменить язык",
+        "back": "◀️ Назад",
         "ingredients": "Ингредиенты",
         "choose_day": "Выбери день недели:",
         "choose_category": "Выбери категорию:",
@@ -119,6 +121,12 @@ TEXTS = {
         "weight": "⚖️ Вес",
         "calories": "🔥 КБЖУ",
         "ingredients_label": "🧾 Ингредиенты",
+        "favorites_title": "⭐ Избранное",
+        "no_favorites": "Пока здесь пусто. Добавь понравившиеся блюда в избранное.",
+        "add_to_favorites": "⭐ В избранное",
+        "remove_from_favorites": "💔 Убрать из избранного",
+        "favorite_added": "Добавлено в избранное.",
+        "favorite_removed": "Удалено из избранного.",
         "contacts_text": (
             "⏰ Режим работы: с 8:00 до 20:00, без выходных\n\n"
             "📍 Университетская, 1 (1-й этаж)\n\n"
@@ -126,36 +134,36 @@ TEXTS = {
         ),
         "no_access": "У тебя нет доступа к админ-панели.",
         "admin_welcome": "Добро пожаловать в админ-панель.",
-        "add_dish": "Добавить блюдо",
-        "edit_dish": "Редактировать блюдо",
-        "delete_dish": "Удалить блюдо",
-        "hide_dish": "Скрыть блюдо",
-        "admins": "Администраторы",
-        "admin_home": "Главная",
-        "add_admin": "Добавить администратора",
-        "remove_admin": "Удалить администратора",
-        "choose_admin_action": "Выбери действие с администраторами:",
-        "current_admins": "Текущие администраторы:",
-        "enter_admin_id": "Отправь Telegram ID пользователя.",
-        "admin_id_invalid": "Неверный Telegram ID. Попробуй ещё раз.",
+        "add_dish": "➕ Добавить блюдо",
+        "edit_dish": "✏️ Редактировать блюдо",
+        "delete_dish": "🗑 Удалить блюдо",
+        "hide_dish": "🙈 Скрыть блюдо",
+        "admins": "👥 Администраторы",
+        "admin_home": "🏠 Главная",
+        "add_admin": "➕ Добавить администратора",
+        "remove_admin": "➖ Удалить администратора",
+        "choose_admin_action": "👥 Выбери действие с администраторами:",
+        "current_admins": "👥 Текущие администраторы:",
+        "enter_admin_id": "🆔 Отправь Telegram ID пользователя.",
+        "admin_id_invalid": "❌ Неверный Telegram ID. Попробуй ещё раз.",
         "admin_added": "✅ Администратор добавлен.",
         "admin_removed": "✅ Администратор удалён.",
         "no_admins": "Список администраторов пока пуст.",
-        "choose_day_admin": "Выбери день, с которым хочешь работать:",
-        "choose_category_admin": "Выбери категорию:",
-        "choose_dish_admin": "Выбери блюдо:",
-        "choose_field_admin": "Что именно редактируем?",
-        "edit_name_ru": "Название RU",
-        "edit_name_en": "Название EN",
-        "edit_price": "Цена",
-        "edit_weight": "Вес",
-        "edit_calories": "КБЖУ",
-        "edit_ingredients_ru": "Ингредиенты RU",
-        "edit_ingredients_en": "Ингредиенты EN",
-        "enter_new_value": "Отправь новое значение.",
-        "dish_hidden": "✅ Блюдо скрыто.",
-        "dish_visible": "✅ Блюдо снова видно.",
-        "dish_deleted": "✅ Блюдо удалено.",
+        "choose_day_admin": "📅 Выбери день, с которым хочешь работать:",
+        "choose_category_admin": "📂 Выбери категорию:",
+        "choose_dish_admin": "🍽 Выбери блюдо:",
+        "choose_field_admin": "🛠 Что именно редактируем?",
+        "edit_name_ru": "📝 Название RU",
+        "edit_name_en": "📝 Название EN",
+        "edit_price": "💰 Цена",
+        "edit_weight": "⚖️ Вес",
+        "edit_calories": "🔥 КБЖУ",
+        "edit_ingredients_ru": "🧾 Ингредиенты RU",
+        "edit_ingredients_en": "🧾 Ингредиенты EN",
+        "enter_new_value": "✍️ Отправь новое значение.",
+        "dish_hidden": "🙈 Блюдо скрыто.",
+        "dish_visible": "👀 Блюдо снова видно.",
+        "dish_deleted": "🗑 Блюдо удалено.",
         "dish_updated": "✅ Блюдо обновлено.",
         "unknown": "Я не понял сообщение. Выбери кнопку из меню.",
         "enter_day": "Напиши день недели на английском: monday, tuesday, wednesday, thursday, friday, saturday, sunday",
@@ -186,13 +194,14 @@ TEXTS = {
             "🌿 I can find the lenten dishes\n\n"
             "✨ If you need anything, I'm always here!"
         ),
-        "today_menu": "Today's menu",
-        "week_menu": "Weekly menu",
-        "fasting_menu": "Lenten menu",
+        "today_menu": "🍽 Today's menu",
+        "week_menu": "📅 Weekly menu",
+        "fasting_menu": "🌿 Lenten menu",
         "contacts": "Information",
-        "admin_panel": "Admin panel",
-        "change_language": "Change language",
-        "back": "Back",
+        "favorites": "⭐ Favorites",
+        "admin_panel": "⚙️ Admin panel",
+        "change_language": "🌐 Change language",
+        "back": "◀️ Back",
         "ingredients": "Ingredients",
         "choose_day": "Choose a day:",
         "choose_category": "Choose a category:",
@@ -204,6 +213,12 @@ TEXTS = {
         "weight": "⚖️ Weight",
         "calories": "🔥 Calories",
         "ingredients_label": "🧾 Ingredients",
+        "favorites_title": "⭐ Favorites",
+        "no_favorites": "Nothing here yet. Add dishes you like to favorites.",
+        "add_to_favorites": "⭐ Add to favorites",
+        "remove_from_favorites": "💔 Remove from favorites",
+        "favorite_added": "Added to favorites.",
+        "favorite_removed": "Removed from favorites.",
         "contacts_text": (
             "⏰ Opening hours: 8:00 to 20:00, every day\n\n"
             "📍 Universitetskaya, 1 (1st floor)\n\n"
@@ -211,36 +226,36 @@ TEXTS = {
         ),
         "no_access": "You do not have access to the admin panel.",
         "admin_welcome": "Welcome to the admin panel.",
-        "add_dish": "Add dish",
-        "edit_dish": "Edit dish",
-        "delete_dish": "Delete dish",
-        "hide_dish": "Hide dish",
-        "admins": "Administrators",
-        "admin_home": "Home",
-        "add_admin": "Add administrator",
-        "remove_admin": "Remove administrator",
-        "choose_admin_action": "Choose an administrator action:",
-        "current_admins": "Current administrators:",
-        "enter_admin_id": "Send the Telegram ID.",
-        "admin_id_invalid": "Invalid Telegram ID. Try again.",
+        "add_dish": "➕ Add dish",
+        "edit_dish": "✏️ Edit dish",
+        "delete_dish": "🗑 Delete dish",
+        "hide_dish": "🙈 Hide dish",
+        "admins": "👥 Administrators",
+        "admin_home": "🏠 Home",
+        "add_admin": "➕ Add administrator",
+        "remove_admin": "➖ Remove administrator",
+        "choose_admin_action": "👥 Choose an administrator action:",
+        "current_admins": "👥 Current administrators:",
+        "enter_admin_id": "🆔 Send the Telegram ID.",
+        "admin_id_invalid": "❌ Invalid Telegram ID. Try again.",
         "admin_added": "✅ Administrator added.",
         "admin_removed": "✅ Administrator removed.",
         "no_admins": "No administrators yet.",
-        "choose_day_admin": "Choose a day to work with:",
-        "choose_category_admin": "Choose a category:",
-        "choose_dish_admin": "Choose a dish:",
-        "choose_field_admin": "What do you want to edit?",
-        "edit_name_ru": "Name RU",
-        "edit_name_en": "Name EN",
-        "edit_price": "Price",
-        "edit_weight": "Weight",
-        "edit_calories": "Calories",
-        "edit_ingredients_ru": "Ingredients RU",
-        "edit_ingredients_en": "Ingredients EN",
-        "enter_new_value": "Send the new value.",
-        "dish_hidden": "✅ Dish hidden.",
-        "dish_visible": "✅ Dish is visible again.",
-        "dish_deleted": "✅ Dish deleted.",
+        "choose_day_admin": "📅 Choose a day to work with:",
+        "choose_category_admin": "📂 Choose a category:",
+        "choose_dish_admin": "🍽 Choose a dish:",
+        "choose_field_admin": "🛠 What would you like to edit?",
+        "edit_name_ru": "📝 Name RU",
+        "edit_name_en": "📝 Name EN",
+        "edit_price": "💰 Price",
+        "edit_weight": "⚖️ Weight",
+        "edit_calories": "🔥 Calories",
+        "edit_ingredients_ru": "🧾 Ingredients RU",
+        "edit_ingredients_en": "🧾 Ingredients EN",
+        "enter_new_value": "✍️ Send the new value.",
+        "dish_hidden": "🙈 Dish hidden.",
+        "dish_visible": "👀 Dish is visible again.",
+        "dish_deleted": "🗑 Dish deleted.",
         "dish_updated": "✅ Dish updated.",
         "unknown": "I did not understand the message. Please choose a button from the menu.",
         "enter_day": "Enter weekday in English: monday, tuesday, wednesday, thursday, friday, saturday, sunday",
@@ -1252,15 +1267,115 @@ def save_users(data):
     save_json(USERS_FILE, data)
 
 
-def set_user_language(user_id, lang):
+def get_user_record(user_id):
     users = load_users()
-    users[str(user_id)] = {"language": lang}
+    record = users.get(str(user_id), {})
+    if not isinstance(record, dict):
+        record = {}
+    return record
+
+
+def save_user_record(user_id, record):
+    users = load_users()
+    users[str(user_id)] = record
     save_users(users)
 
 
+def set_user_language(user_id, lang):
+    record = get_user_record(user_id)
+    record["language"] = lang
+    save_user_record(user_id, record)
+
+
 def get_user_language(user_id):
-    users = load_users()
-    return users.get(str(user_id), {}).get("language", "ru")
+    return get_user_record(user_id).get("language", "ru")
+
+
+def get_user_favorites(user_id):
+    favorites = get_user_record(user_id).get("favorites", [])
+    if not isinstance(favorites, list):
+        return []
+    return [item for item in favorites if isinstance(item, str) and item]
+
+
+def set_user_favorites(user_id, favorites):
+    unique = []
+    for item in favorites:
+        if item not in unique:
+            unique.append(item)
+    record = get_user_record(user_id)
+    record["favorites"] = unique
+    save_user_record(user_id, record)
+
+
+def is_favorite(user_id, favorite_ref):
+    return favorite_ref in get_user_favorites(user_id)
+
+
+def toggle_favorite(user_id, favorite_ref):
+    favorites = get_user_favorites(user_id)
+    if favorite_ref in favorites:
+        favorites = [item for item in favorites if item != favorite_ref]
+        set_user_favorites(user_id, favorites)
+        return False
+
+    favorites.append(favorite_ref)
+    set_user_favorites(user_id, favorites)
+    return True
+
+
+def build_favorite_ref(kind, day_key=None, category=None, index=None):
+    parts = ["fav", kind]
+    if day_key is not None:
+        parts.append(str(day_key))
+    if category is not None:
+        parts.append(str(category))
+    if index is not None:
+        parts.append(str(index))
+    return ":".join(parts)
+
+
+def resolve_favorite_ref(ref):
+    parts = ref.split(":")
+    if len(parts) < 2 or parts[0] != "fav":
+        return None, None
+
+    kind = parts[1]
+    menu_data = load_menu()
+
+    try:
+        if kind == "fast" and len(parts) == 3:
+            idx = int(parts[2])
+            dishes = _visible_items(menu_data.get("fasting_menu", []))
+            if 0 <= idx < len(dishes):
+                return dishes[idx], ref
+
+        if kind == "list" and len(parts) == 4:
+            day_key = parts[2]
+            idx = int(parts[3])
+            dishes = _visible_items(menu_data.get(day_key, []))
+            if 0 <= idx < len(dishes):
+                return dishes[idx], ref
+
+        if kind == "cat" and len(parts) == 5:
+            day_key = parts[2]
+            category = parts[3]
+            idx = int(parts[4])
+            day_data = menu_data.get(day_key, {})
+            dishes = _visible_items(day_data.get(category, []))
+            if 0 <= idx < len(dishes):
+                return dishes[idx], ref
+    except (ValueError, TypeError):
+        return None, None
+
+    return None, None
+
+
+def get_favorite_label(ref, user_id):
+    dish, _ = resolve_favorite_ref(ref)
+    if not dish:
+        return None
+    return get_dish_name(dish, user_id)
 
 
 def t(user_id, key):
@@ -1371,7 +1486,17 @@ def pop_nav(user_id):
     stack = nav_history.setdefault(user_id, ["main"])
     if len(stack) > 1:
         stack.pop()
-    return stack[-1]
+        return stack[-1]
+
+    stack[:] = ["main"]
+    return "main"
+
+
+async def safe_edit_text(message, text, reply_markup=None, parse_mode=None):
+    try:
+        await message.edit_text(text, reply_markup=reply_markup, parse_mode=parse_mode)
+    except TelegramBadRequest:
+        pass
 
 
 def main_keyboard(user_id):
@@ -1380,6 +1505,7 @@ def main_keyboard(user_id):
             [InlineKeyboardButton(text=t(user_id, "today_menu"), callback_data="today_menu")],
             [InlineKeyboardButton(text=t(user_id, "week_menu"), callback_data="week_menu")],
             [InlineKeyboardButton(text=t(user_id, "fasting_menu"), callback_data="fasting_menu")],
+            [InlineKeyboardButton(text=t(user_id, "favorites"), callback_data="favorites")],
             [InlineKeyboardButton(text=t(user_id, "contacts"), callback_data="contacts")],
             [InlineKeyboardButton(text=t(user_id, "change_language"), callback_data="change_language")],
             [InlineKeyboardButton(text=t(user_id, "admin_panel"), callback_data="admin_panel")],
@@ -1548,6 +1674,33 @@ def build_back_keyboard(user_id, callback_data):
     )
 
 
+def build_dish_detail_keyboard(user_id, favorite_ref, back_callback="nav:back"):
+    favorite_text = t(user_id, "remove_from_favorites") if is_favorite(user_id, favorite_ref) else t(user_id, "add_to_favorites")
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text=favorite_text, callback_data=f"fav_toggle:{favorite_ref}")],
+            [InlineKeyboardButton(text=t(user_id, "back"), callback_data=back_callback)],
+        ]
+    )
+
+
+def build_favorites_keyboard(user_id, favorites):
+    rows = []
+    for ref in favorites:
+        label = get_favorite_label(ref, user_id)
+        if not label:
+            continue
+        rows.append([
+            InlineKeyboardButton(
+                text=f"⭐ {label}",
+                callback_data=f"fav_open:{ref}",
+            )
+        ])
+
+    rows.append([InlineKeyboardButton(text=t(user_id, "back"), callback_data="nav:back")])
+    return InlineKeyboardMarkup(inline_keyboard=rows)
+
+
 def build_week_keyboard(user_id):
     lang = get_user_language(user_id)
     rows = [
@@ -1598,9 +1751,6 @@ def build_category_items_keyboard(day_key, category, menu_data, user_id):
     items = _visible_items(day_data.get(category, []))
     buttons = []
 
-    if category == "set_lunch":
-        return None
-
     for idx, dish in enumerate(items):
         buttons.append([
             InlineKeyboardButton(
@@ -1629,10 +1779,55 @@ def build_fasting_keyboard(menu_data, user_id):
     return InlineKeyboardMarkup(inline_keyboard=buttons) if buttons else None
 
 
+def format_dish_detail(dish, user_id):
+    return (
+        f"{get_dish_name(dish, user_id)}\n"
+        f"{t(user_id, 'price')}: {dish.get('price', '—')}\n"
+        f"{t(user_id, 'weight')}: {dish.get('weight', '—')}\n"
+        f"{t(user_id, 'calories')}: {dish.get('calories', '—')}\n"
+        f"{t(user_id, 'ingredients_label')}: {get_dish_ingredients(dish, user_id)}"
+    )
+
+
+async def render_dish_detail(message, user_id, dish, favorite_ref, back_callback="nav:back"):
+    await safe_edit_text(
+        message,
+        format_dish_detail(dish, user_id),
+        reply_markup=build_dish_detail_keyboard(user_id, favorite_ref, back_callback=back_callback),
+    )
+
+
+async def render_favorites_menu(message, user_id, track=True):
+    if track:
+        push_nav(user_id, "favorites")
+
+    favorites = get_user_favorites(user_id)
+    if not favorites:
+        await safe_edit_text(
+            message,
+            t(user_id, "no_favorites"),
+            reply_markup=build_back_keyboard(user_id, "nav:back"),
+        )
+        return
+
+    lines = [t(user_id, "favorites_title"), ""]
+    for ref in favorites:
+        label = get_favorite_label(ref, user_id)
+        if label:
+            lines.append(f"⭐ {label}")
+
+    await safe_edit_text(
+        message,
+        "\n".join(lines),
+        reply_markup=build_favorites_keyboard(user_id, favorites),
+    )
+
+
 async def render_main_menu(message, user_id, track=True):
     if track:
-        push_nav(user_id, "main")
-    await message.edit_text(
+        set_nav_root(user_id, "main")
+    await safe_edit_text(
+        message,
         t(user_id, "welcome"),
         reply_markup=main_keyboard(user_id),
     )
@@ -1641,7 +1836,8 @@ async def render_main_menu(message, user_id, track=True):
 async def render_week_menu(message, user_id, track=True):
     if track:
         push_nav(user_id, "week")
-    await message.edit_text(
+    await safe_edit_text(
+        message,
         t(user_id, "choose_day"),
         reply_markup=build_week_keyboard(user_id),
     )
@@ -1654,13 +1850,15 @@ async def render_day_menu(message, day_key, user_id, track=True):
     day_data = menu_data.get(day_key)
 
     if isinstance(day_data, dict):
-        await message.edit_text(
+        await safe_edit_text(
+            message,
             build_day_menu_text(day_key, menu_data, user_id),
             reply_markup=build_day_categories_keyboard(day_key, menu_data, user_id),
         )
         return
 
-    await message.edit_text(
+    await safe_edit_text(
+        message,
         build_day_menu_text(day_key, menu_data, user_id),
         reply_markup=build_day_ingredients_keyboard(day_key, menu_data, user_id),
     )
@@ -1687,14 +1885,16 @@ async def render_category_menu(message, day_key, category, user_id, track=True):
                 f"  {t(user_id, 'calories')}: {item.get('calories', '—')}\n"
             )
 
-        await message.edit_text(
+        await safe_edit_text(
+            message,
             response,
-            reply_markup=build_day_categories_keyboard(day_key, menu_data, user_id),
+            reply_markup=build_category_items_keyboard(day_key, category, menu_data, user_id),
         )
         return
 
     if not items:
-        await message.edit_text(
+        await safe_edit_text(
+            message,
             t(user_id, "empty_category"),
             reply_markup=build_day_categories_keyboard(day_key, menu_data, user_id),
         )
@@ -1709,7 +1909,8 @@ async def render_category_menu(message, day_key, category, user_id, track=True):
             f"   {t(user_id, 'calories')}: {dish.get('calories', '—')}\n\n"
         )
 
-    await message.edit_text(
+    await safe_edit_text(
+        message,
         response,
         reply_markup=build_category_items_keyboard(day_key, category, menu_data, user_id),
     )
@@ -1722,7 +1923,8 @@ async def render_fasting_menu(message, user_id, track=True):
     fasting_menu = _visible_items(menu_data.get("fasting_menu", []))
 
     if not fasting_menu:
-        await message.edit_text(
+        await safe_edit_text(
+            message,
             t(user_id, "no_menu_day").format(day=t(user_id, "fasting_menu")),
             reply_markup=main_keyboard(user_id),
         )
@@ -1736,7 +1938,8 @@ async def render_fasting_menu(message, user_id, track=True):
             f"   {t(user_id, 'calories')}: {dish.get('calories', '—')}\n\n"
         )
 
-    await message.edit_text(
+    await safe_edit_text(
+        message,
         response,
         reply_markup=build_fasting_keyboard(menu_data, user_id),
     )
@@ -1758,6 +1961,10 @@ async def render_screen_from_token(message, user_id, token):
 
     if token == "fasting":
         await render_fasting_menu(message, user_id, track=False)
+        return
+
+    if token == "favorites":
+        await render_favorites_menu(message, user_id, track=False)
         return
 
     if token.startswith("day:"):
@@ -1788,6 +1995,7 @@ async def start_handler(message: Message):
 @dp.message(F.text == "Русский")
 async def set_russian(message: Message):
     set_user_language(message.from_user.id, "ru")
+    set_nav_root(message.from_user.id, "main")
     await message.answer(
         TEXTS["ru"]["language_saved_ru"],
         reply_markup=main_keyboard(message.from_user.id),
@@ -1798,6 +2006,7 @@ async def set_russian(message: Message):
 @dp.message(F.text == "English")
 async def set_english(message: Message):
     set_user_language(message.from_user.id, "en")
+    set_nav_root(message.from_user.id, "main")
     await message.answer(
         TEXTS["en"]["language_saved_en"],
         reply_markup=main_keyboard(message.from_user.id),
@@ -1856,6 +2065,13 @@ async def week_menu_callback(callback: CallbackQuery):
 async def fasting_menu_callback(callback: CallbackQuery):
     user_id = callback.from_user.id
     await render_fasting_menu(callback.message, user_id)
+    await callback.answer()
+
+
+@dp.callback_query(F.data == "favorites")
+async def favorites_button_callback(callback: CallbackQuery):
+    user_id = callback.from_user.id
+    await render_favorites_menu(callback.message, user_id)
     await callback.answer()
 
 
@@ -2663,15 +2879,9 @@ async def ingredients_callback(callback: CallbackQuery):
 
     if 0 <= idx < len(dishes):
         dish = dishes[idx]
+        favorite_ref = build_favorite_ref("list", day, index=idx)
         push_nav(user_id, "detail")
-        await callback.message.edit_text(
-            f"{get_dish_name(dish, user_id)}\n"
-            f"{t(user_id, 'price')}: {dish.get('price', '—')}\n"
-            f"{t(user_id, 'weight')}: {dish.get('weight', '—')}\n"
-            f"{t(user_id, 'calories')}: {dish.get('calories', '—')}\n"
-            f"{t(user_id, 'ingredients_label')}: {get_dish_ingredients(dish, user_id)}",
-            reply_markup=build_back_keyboard(user_id, "nav:back"),
-        )
+        await render_dish_detail(callback.message, user_id, dish, favorite_ref)
     else:
         push_nav(user_id, "detail")
         await callback.message.edit_text(
@@ -2691,15 +2901,9 @@ async def fasting_item_callback(callback: CallbackQuery):
 
     if 0 <= idx < len(dishes):
         dish = dishes[idx]
+        favorite_ref = build_favorite_ref("fast", index=idx)
         push_nav(user_id, "detail")
-        await callback.message.edit_text(
-            f"{get_dish_name(dish, user_id)}\n"
-            f"{t(user_id, 'price')}: {dish.get('price', '—')}\n"
-            f"{t(user_id, 'weight')}: {dish.get('weight', '—')}\n"
-            f"{t(user_id, 'calories')}: {dish.get('calories', '—')}\n"
-            f"{t(user_id, 'ingredients_label')}: {get_dish_ingredients(dish, user_id)}",
-            reply_markup=build_back_keyboard(user_id, "nav:back"),
-        )
+        await render_dish_detail(callback.message, user_id, dish, favorite_ref)
     else:
         push_nav(user_id, "detail")
         await callback.message.edit_text(
@@ -2734,15 +2938,9 @@ async def category_item_callback(callback: CallbackQuery):
 
     if 0 <= idx < len(dishes):
         dish = dishes[idx]
+        favorite_ref = build_favorite_ref("cat", day, category, idx)
         push_nav(user_id, "detail")
-        await callback.message.edit_text(
-            f"{get_dish_name(dish, user_id)}\n"
-            f"{t(user_id, 'price')}: {dish.get('price', '—')}\n"
-            f"{t(user_id, 'weight')}: {dish.get('weight', '—')}\n"
-            f"{t(user_id, 'calories')}: {dish.get('calories', '—')}\n"
-            f"{t(user_id, 'ingredients_label')}: {get_dish_ingredients(dish, user_id)}",
-            reply_markup=build_back_keyboard(user_id, "nav:back"),
-        )
+        await render_dish_detail(callback.message, user_id, dish, favorite_ref)
     else:
         push_nav(user_id, "detail")
         await callback.message.edit_text(
@@ -2751,6 +2949,47 @@ async def category_item_callback(callback: CallbackQuery):
         )
 
     await callback.answer()
+
+
+@dp.callback_query(F.data.startswith("fav_open:"))
+async def favorite_open_callback(callback: CallbackQuery):
+    user_id = callback.from_user.id
+    ref = callback.data.split(":", 1)[1]
+    dish, _ = resolve_favorite_ref(ref)
+
+    if not dish:
+        await callback.message.edit_text(
+            t(user_id, "dish_not_found"),
+            reply_markup=build_back_keyboard(user_id, "nav:back"),
+        )
+        await callback.answer()
+        return
+
+    push_nav(user_id, "detail")
+    await render_dish_detail(callback.message, user_id, dish, ref)
+    await callback.answer()
+
+
+@dp.callback_query(F.data.startswith("fav_toggle:"))
+async def favorite_toggle_callback(callback: CallbackQuery):
+    user_id = callback.from_user.id
+    ref = callback.data.split(":", 1)[1]
+    added = toggle_favorite(user_id, ref)
+    dish, _ = resolve_favorite_ref(ref)
+
+    if not dish:
+        await callback.answer(
+            t(user_id, "favorite_added" if added else "favorite_removed"),
+            show_alert=False,
+        )
+        await render_favorites_menu(callback.message, user_id, track=False)
+        return
+
+    await render_dish_detail(callback.message, user_id, dish, ref)
+    await callback.answer(
+        t(user_id, "favorite_added" if added else "favorite_removed"),
+        show_alert=False,
+    )
 
 
 async def main():

@@ -26,6 +26,7 @@ async def build_main_keyboard(user_id: int, user_service: UserService) -> Inline
             [InlineKeyboardButton(text=get_text("today_menu", lang), callback_data="today_menu")],
             [InlineKeyboardButton(text=get_text("week_menu", lang), callback_data="week_menu")],
             [InlineKeyboardButton(text=get_text("fasting_menu", lang), callback_data="fasting_menu")],
+            [InlineKeyboardButton(text=get_text("favorites", lang), callback_data="favorites")],
             [InlineKeyboardButton(text=get_text("contacts", lang), callback_data="contacts")],
             [InlineKeyboardButton(text=get_text("language_btn", lang), callback_data="change_language")],
             [InlineKeyboardButton(text=get_text("admin_panel", lang), callback_data="admin_panel")],
