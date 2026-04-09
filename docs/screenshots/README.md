@@ -1,26 +1,34 @@
-# Screenshots for README
+# Screenshots
 
-## Required Screenshots
+This folder contains screenshots used in the main project README.
 
-Add the following screenshots to this folder:
+## Gallery
 
-1. **main_menu.png** - Main menu of the bot showing:
-   - Language selection
-   - Main navigation buttons (Today, Week, Fasting, Info)
-   
-2. **day_menu.png** - Day menu showing:
-   - Categories (Salads, Soups, Main dishes, etc.)
-   - Dishes within a category
+### Start Screen
+![Start screen](./%3Astart.jpeg)
 
-3. **categories.png** - Category view showing:
-   - List of dishes in a category
-   - Prices and weights
+### Main Menu
+![Main menu](./Matrix%20Bot.jpeg)
 
-4. **dish_detail.png** - Dish detail showing:
-   - Name, price, weight, calories
-   - Ingredients
+### Language Selection
+![Language selection](./Language.jpeg)
 
-5. **admin_panel.png** - Admin panel showing:
-   - Add/Edit/Delete dish options
-   - View menu option
-  ![admin panel](docs/screenshots/Admin panel.jpeg)
+### Days Menu
+![Days menu](./Days.jpeg)
+
+### Category View
+![Category view](./Category.jpeg)
+
+### Admin Panel
+![Admin panel](./Admin%20panel.jpeg)
+
+## Files in This Folder
+
+- `:start.jpeg`
+- `Matrix Bot.jpeg`
+- `Language.jpeg`
+- `Days.jpeg`
+- `Category.jpeg`
+- `Admin panel.jpeg`
+
+If you add new screenshots later, place them in this folder and update this file if needed.
